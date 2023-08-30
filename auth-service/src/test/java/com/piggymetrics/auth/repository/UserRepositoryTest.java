@@ -26,7 +26,8 @@ public class UserRepositoryTest {
 	public void shouldSaveAndFindUserByName() {
 
 		User user = new User();
-		user.setUsername("name");
+		// deepcode ignore NoHardcodedCredentials/test: <please specify a reason of ignoring this>
+  user.setUsername("name");
 		user.setPassword("password");
 		repository.save(user);
 

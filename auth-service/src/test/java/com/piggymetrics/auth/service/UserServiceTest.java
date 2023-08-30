@@ -29,7 +29,8 @@ public class UserServiceTest {
 	public void shouldCreateUser() {
 
 		User user = new User();
-		user.setUsername("name");
+		// deepcode ignore NoHardcodedCredentials/test: <please specify a reason of ignoring this>
+  user.setUsername("name");
 		user.setPassword("password");
 
 		userService.create(user);
